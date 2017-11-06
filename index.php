@@ -11,6 +11,8 @@ function stringToColor($s) {
     return "rgb($r, $g, $b)";                                                    
 } 
 
+$showGitHubLink = trim(strtoupper(getenv('SHOW_GITHUB_LINK'))) == "YES";
+
 $color = stringToColor($hostname);
 
 ?>
@@ -22,4 +24,12 @@ $color = stringToColor($hostname);
     <p>My hostname is <strong><?=$hostname ?></strong>!</p>   
     
     <p>The datetime is <strong><?=date(DATE_ATOM) ?></strong></p>
+    
+    <?php 
+    
+    if ($showGitHubLink) {
+        echo '<p><a href = "https://github.com/jamesread/php-show-my-hostname">php-show-my-hostname</a> On GitHub</p>';
+    }
+      
+    ?>
 </body>
