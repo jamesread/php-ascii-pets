@@ -8,7 +8,7 @@ function stringToColor($s) {
     $g = $crcVal >> 2 & 0xff;                                                      
     $b = $crcVal >> 3 & 0xff;                                                      
                                                                                    
-    return "rgb($r, $g, $b)\n";                                                    
+    return "rgb($r, $g, $b)";                                                    
 } 
 
 $color = stringToColor($hostname);
