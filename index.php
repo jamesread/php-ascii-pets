@@ -18,7 +18,7 @@ $color = stringToColor($hostname);
 ?>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
 
-<body style = "background-color: <?=$color ?>;">
+<body style = "background-color: <?=$color ?>; border: 2em solid red;">
     <h1>Hi! This is php-show-my-hostname!</h1>
     
     <p>My hostname is <strong><?=$hostname ?></strong>!</p>   
