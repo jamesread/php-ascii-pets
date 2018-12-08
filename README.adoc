@@ -2,15 +2,15 @@
 
 = php-ascii-pets
 
-= What is this?
+== What is this?
 
-This is a super simple application that can showcase simple OpenShift concepts very quickly. It's intented as a "I know nothing about OpenShift" level of demo, and teaches routes, services, deployments and builds in about 15 minutes.
+This is a super simple application that can showcase simple OpenShift concepts very quickly. It's intented as a "I know nothing about OpenShift" level of demo, and teaches routes, services, deployments and builds in **about 15 minutes.**
 
-= What do I need before I get started?
+== What do I need before I get started?
 
 A working OpenShift environment. That's all!
 
-= What will I do in this tutorial?
+== What will I do in this tutorial?
 
 * Build and deploy a simple single-service application.
 * Make a few configuration changes. 
@@ -43,6 +43,8 @@ image::images/deployed.png[]
 
 That's your first app running on OpenShift!
 
+= Make some changes
+
 == Scale up
 
 image::images/scaleUp.png[]
@@ -73,13 +75,8 @@ Adjust the existing route to point to the new service on a 60%/40% split.
 
 Refresh lots of times in your browser :)
 
-== More complex deployments (more on this later)
+= Where can I go from here?
 
-=== Deploy “Node.js + MongoDB (Persistent)”
+Check out more OpenShift demos, or play around with the deployment of this app a bit more and familiarize yourself with OpenShift ;)
 
-Notice the two pods connected to each other.
-
-=== Deploy “Pipeline Build Example”.
-
-This includes a Jenkins server, with pipelines setup.
-
+* https://github.com/city-breaks-on-openshift
