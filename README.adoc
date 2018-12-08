@@ -6,11 +6,11 @@
 
 This is a super simple application that can showcase simple OpenShift concepts very quickly. It's intented as a "I know nothing about OpenShift" level of demo, and teaches routes, services, deployments and builds in **about 15 minutes.**
 
-== What do I need before I get started?
+=== What do I need before I get started?
 
 A working OpenShift environment. That's all!
 
-== What will I do in this tutorial?
+=== What will I do in this tutorial?
 
 * Build and deploy a simple single-service application.
 * Make a few configuration changes. 
