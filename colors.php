@@ -32,7 +32,9 @@ $text = "rgb($contrastColor[0],$contrastColor[1],$contrastColor[2])";
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
 
 <body style = "background-color: <?=$color ?>;color: <?=$text ?>;">
-    <h1>Hi! This is php-show-my-hostname!</h1>
+    <h1>Hi! This is Ascii Pets!</h1>
+
+	<h2>No pets found here, just colors.</h2>
     
     <p>My hostname is <strong><?=$hostname ?></strong>!</p>   
     
@@ -41,7 +43,7 @@ $text = "rgb($contrastColor[0],$contrastColor[1],$contrastColor[2])";
     <?php 
     
     if ($showGitHubLink) {
-        echo '<p><a href = "https://github.com/jamesread/php-show-my-hostname">php-show-my-hostname</a> On GitHub</p>';
+        echo '<p><a href = "https://github.com/jamesread/php-ascii-pets">php-asciipets</a> On GitHub</p>';
     }
       
     ?>
