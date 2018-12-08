@@ -49,17 +49,19 @@ That's your first app running on OpenShift!
 
 image::images/scaleUp.png[]
 
-Note: OpenShift’s router will make sessions sticky by default by sessing a cookie. Try deleting the cookie, or using “curl” (which won’t save cookies) to see how OpenShift balances traffic.
+You may need to disable cookies, so that OpenShift’s router does not stick you to a single session.
 
-Remember to disable cookies, so that OpenShift’s router does not stick you to a single session.
-
-The hostname will change randomly between requests, as OpenShift is balancing requests to each pod. The background color of the page is based on the hostname.
+The hostname will change randomly between requests, as OpenShift is balancing requests to each pod. The pet displayed on the page is based on the hostname.
 
 == Enable GitHub Link
 
 You need to set the environment variable “SHOW_GITHUB_LINK”, on the DeploymentConfig…
 
 Note that you will have to redeploy the DeploymentConfig for the change to take effect.
+
+== Enable dogs :-) (optional!)
+
+If you set the environment variable `PET_TYPE` to `dogs`, then your pet type will be changed accordingly!
 
 == Try setting the environment variable via a ConfigMap
 

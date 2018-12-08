@@ -4,7 +4,7 @@ $hostname = gethostname();
 $showGitHubLink = trim(strtoupper(getenv('SHOW_GITHUB_LINK'))) == "YES";
 
 switch (getenv("PET_TYPE")) {
-	case 'dogs': $sourcePets = "pets/dogs.txt"; 
+	case 'dogs': $sourcePets = "pets/dogs.txt"; break; 
 	default: $sourcePets = "pets/cats.txt";
 }
 
