@@ -19,6 +19,8 @@ image::images/deploy.png[]
 
 == Check out the "show-my-hostname" route
 
+image::images/route.png[]
+
 You should get a page that looks like this; 
 
 image::images/deployed.png[]
