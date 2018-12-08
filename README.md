@@ -1,1 +1,0 @@
-# php-show-my-hostname
