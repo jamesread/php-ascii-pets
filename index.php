@@ -29,7 +29,7 @@ $pet = $pets[$petIndex];
 	<?php echo $pet; ?>
 	</pre>
     
-    <p>This pet was generated on <strong><?=date("D jS F, H:mm ") ?></strong></p>
+    <p>This pet was generated on <strong><?=date("D jS F, H:m ") ?></strong>, and came from <strong><?= $sourcePets; ?></strong>.</p>
     
     <?php 
     
