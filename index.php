@@ -10,9 +10,9 @@ switch (getenv("PET_TYPE")) {
 
 $pets = explode("***", file_get_contents($sourcePets));
 
-$firstHostnameCharacter = $hostname[0];
+$lastHostnameCharacter = substr($hostname, -1);
 
-$petIndex = (is_numeric($firstHostnameCharacter)) ? $firstHostnameCharacter : ord($firstHostnameCharacter) - 96; 
+$petIndex = (is_numeric($lastHostnameCharacter)) ? $lastHostnameCharacter : ord($lastHostnameCharacter) - 96; 
 
 $pet = $pets[$petIndex];
 
@@ -21,7 +21,7 @@ $pet = $pets[$petIndex];
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
 
 <body>
-    <h1>Hi! This is AsciiPets!</h1>
+    <h1>Hi! This is Ascii Pets!</h1>
     
     <p>My hostname is <strong><?=$hostname ?></strong>, and this pet lives here; </p>   
 
@@ -29,7 +29,7 @@ $pet = $pets[$petIndex];
 	<?php echo $pet; ?>
 	</pre>
     
-    <p>This pet was generated on <strong><?=date("D Js F, HH:MM ") ?></strong></p>
+    <p>This pet was generated on <strong><?=date("D Js F, H:mm ") ?></strong></p>
     
     <?php 
     

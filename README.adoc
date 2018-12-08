@@ -1,13 +1,29 @@
-= php-show-my-hostname
+:toc:
+
+= php-ascii-pets
+
+= What is this?
+
+This is a super simple application that can showcase simple OpenShift concepts very quickly. It's intented as a "I know nothing about OpenShift" level of demo, and teaches routes, services, deployments and builds in about 15 minutes.
+
+= What do I need before I get started?
+
+A working OpenShift environment. That's all!
+
+= What will I do in this tutorial?
+
+* Build and deploy a simple single-service application.
+* Make a few configuration changes. 
+* Learn basic openshift concepts.
 
 = Create a project
 
-Create an OpenShift project called "show-my-hostname"
+Create an OpenShift project called "ascii-pets"
 
 == Add a PHP builder image, using PHP version 7.1.
 
-* **Application Name:** `show-my-hostname`
-* **Git Repository**: `https://github.com/jamesread/php-show-my-hostname.git`
+* **Application Name:** `ascii-pets`
+* **Git Repository**: `https://github.com/jamesread/php-ascii-pets.git`
 
 == Watch the build complete
 
@@ -17,7 +33,7 @@ image::images/build.png[]
 
 image::images/deploy.png[]
 
-== Check out the "show-my-hostname" route
+== Check out the "ascii-pets" route
 
 image::images/route.png[]
 
