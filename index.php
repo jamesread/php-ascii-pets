@@ -21,15 +21,15 @@ $pet = $pets[$petIndex];
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
 
 <body>
-    <h1>Hi! This is php-show-my-hostname!</h1>
+    <h1>Hi! This is AsciiPets!</h1>
     
-    <p>My hostname is <strong><?=$hostname ?></strong>!</p>   
+    <p>My hostname is <strong><?=$hostname ?></strong>, and this pet lives here; </p>   
 
 	<pre style = "font-weight: bold;">
 	<?php echo $pet; ?>
 	</pre>
     
-    <p>The datetime is <strong><?=date(DATE_ATOM) ?></strong></p>
+    <p>This pet was generated on <strong><?=date(DATE_RSS) ?></strong></p>
     
     <?php 
     
