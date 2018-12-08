@@ -29,12 +29,12 @@ $pet = $pets[$petIndex];
 	<?php echo $pet; ?>
 	</pre>
     
-    <p>This pet was generated on <strong><?=date(DATE_RSS) ?></strong></p>
+    <p>This pet was generated on <strong><?=date("D Js F, HH:MM ") ?></strong></p>
     
     <?php 
     
     if ($showGitHubLink) {
-        echo '<p><a href = "https://github.com/jamesread/php-show-my-hostname">php-show-my-hostname</a> On GitHub</p>';
+        echo '<p><a href = "https://github.com/jamesread/php-ascii-pets">php-ascii-pets</a> On GitHub</p>';
     }
       
     ?>
