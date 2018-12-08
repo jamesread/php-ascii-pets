@@ -6,8 +6,8 @@ Create an OpenShift project called "show-my-hostname"
 
 == Add a PHP builder image, using PHP version 7.1.
 
-* **Application Name:** show-my-hostname 
-* **Git Repository**: https://github.com/jamesread/php-show-my-hostname.git 
+* **Application Name:** `show-my-hostname`
+* **Git Repository**: `https://github.com/jamesread/php-show-my-hostname.git`
 
 == Check out the "show-my-hostname" route
 
