@@ -1,0 +1,59 @@
+= php-show-my-hostname
+
+= Create a project
+
+Create an OpenShift project called "show-my-hostname"
+
+== Add a PHP builder image, using PHP version 7.1.
+
+* **Application Name:** show-my-hostname 
+* **Git Repository**: https://github.com/jamesread/php-show-my-hostname.git 
+
+== Check out the "show-my-hostname" route
+
+You should get a page that looks like this; 
+
+image::images/deployed.png[]
+
+That's your first app running on OpenShift!
+
+== Scale up
+
+image::images/scaleUp.png[]
+
+Note: OpenShift’s router will make sessions sticky by default by sessing a cookie. Try deleting the cookie, or using “curl” (which won’t save cookies) to see how OpenShift balances traffic.
+
+Remember to disable cookies, so that OpenShift’s router does not stick you to a single session.
+
+The hostname will change randomly between requests, as OpenShift is balancing requests to each pod. The background color of the page is based on the hostname.
+
+== Enable GitHub Link
+
+You need to set the environment variable “SHOW_GITHUB_LINK”, on the DeploymentConfig…
+
+Note that you will have to redeploy the DeploymentConfig for the change to take effect.
+
+== Try setting the environment variable via a ConfigMap
+
+ConfigMaps make configuration more manageable at scale.
+
+== Try A/B testing
+
+Deploy a new PHP app, but this time using the `feature_border` branch from GitHub (you’ll need to switch to “advanced” in the deployment view.
+
+Do not deploy a new route. 
+
+Adjust the existing route to point to the new service on a 60%/40% split. 
+
+Refresh lots of times in your browser :)
+
+== More complex deployments (more on this later)
+
+=== Deploy “Node.js + MongoDB (Persistent)”
+
+Notice the two pods connected to each other.
+
+=== Deploy “Pipeline Build Example”.
+
+This includes a Jenkins server, with pipelines setup.
+
