@@ -9,6 +9,14 @@ Create an OpenShift project called "show-my-hostname"
 * **Application Name:** `show-my-hostname`
 * **Git Repository**: `https://github.com/jamesread/php-show-my-hostname.git`
 
+== Watch the build complete
+
+image::images/build.png[]
+
+== Wait for the application to deploy; 
+
+image::images/deploy.png[]
+
 == Check out the "show-my-hostname" route
 
 You should get a page that looks like this; 
