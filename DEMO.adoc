@@ -1,0 +1,35 @@
+:toc:
+
+= DEMO Guide 
+
+[NOTE]
+This demo guide is intended for a reference and **prompt** for speakers who are showing this to an audience. These instructions are designed for people who know OpenShift and have run through the link:LAB.adoc[lab] several times before. It should not be used to learn how to use the project. For that, run through the more detailed link:LAB.adoc[lab instructions].
+
+**Time to complete all demos:** 10-15 minutes.
+
+== Build from source 
+
+. Create Project, add PHP
+** **Git Repository**: `https://github.com/jamesread/php-ascii-pets.git`
+. Look at the build complete, push container to registry
+. Watch the deploy happen automatically
+. This was a very easy, simple deployment
+. Click route to view application
+
+== Scaling 
+
+. Scale the pods up, different pets should appear (might need to disable cookies)
+
+== Feature toggle
+
+. Add environment variable `SHOW_GITHUB_LINK` with any value
+
+== Configuration: dogs :) 
+
+. Set the environment variable `PET_TYPE` to `dogs` (case sensitive, spelling sensitive!) 
+
+== A/B testing
+
+. Broken at the moment
+
+ 
