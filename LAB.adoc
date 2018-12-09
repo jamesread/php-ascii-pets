@@ -37,6 +37,8 @@ image::images/deploy.png[]
 
 == Check out the "ascii-pets" route
 
+"Routes" are how external traffic can talk to applications running inside OpenShift. Click on the route to access this new application; 
+
 image::images/route.png[]
 
 You should get a page that looks like this; 
