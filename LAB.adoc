@@ -5,9 +5,9 @@
 [NOTE]
 This lab guide is intended for learning the project, and running though things on your own. If you already know this project, and are showing other people, you might want to use the link:DEMO.adoc[demo guide] :-)
 
-== Create a project for this lab
+= Deploy the source code into a container
 
-Create an OpenShift project called "ascii-pets"
+Create an OpenShift project for this lab called "ascii-pets"
 
 == Add a PHP builder image, using PHP version 7.1.
 
