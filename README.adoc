@@ -6,79 +6,25 @@
 
 This is a super simple application that can showcase simple OpenShift concepts very quickly. It's intented as a "I know nothing about OpenShift" level of demo, and teaches routes, services, deployments and builds in **about 15 minutes.**
 
+image::images/deployed.png[]
+
 === What do I need before I get started?
 
 A working OpenShift environment. That's all!
 
-=== What will I do in this tutorial?
+=== What will I learn/demo?
 
 * Build and deploy a simple single-service application.
 * Make a few configuration changes. 
 * Learn basic openshift concepts.
 
-= Create a project
+= Get started
 
-Create an OpenShift project called "ascii-pets"
+== LAB Guide 
 
-== Add a PHP builder image, using PHP version 7.1.
+The link:LAB.adoc[LAB Guide] is intended for learning the project, running through things on your own.
 
-* **Application Name:** `ascii-pets`
-* **Git Repository**: `https://github.com/jamesread/php-ascii-pets.git`
+== DEMO Guide
 
-== Watch the build complete
+The link:DEMO.adoc[DEMO Guide] is intended for showing others OpenShift with .NET and Azure, useful for workshops, presentations, and speaking sessions.
 
-image::images/build.png[]
-
-== Wait for the application to deploy; 
-
-image::images/deploy.png[]
-
-== Check out the "ascii-pets" route
-
-image::images/route.png[]
-
-You should get a page that looks like this; 
-
-image::images/deployed.png[]
-
-That's your first app running on OpenShift!
-
-= Make some changes
-
-== Scale up
-
-image::images/scaleUp.png[]
-
-You may need to disable cookies, so that OpenShift’s router does not stick you to a single session.
-
-The hostname will change randomly between requests, as OpenShift is balancing requests to each pod. The pet displayed on the page is based on the hostname.
-
-== Enable GitHub Link
-
-You need to set the environment variable “SHOW_GITHUB_LINK”, on the DeploymentConfig…
-
-Note that you will have to redeploy the DeploymentConfig for the change to take effect.
-
-== Enable dogs :-) (optional!)
-
-If you set the environment variable `PET_TYPE` to `dogs`, then your pet type will be changed accordingly!
-
-== Try setting the environment variable via a ConfigMap
-
-ConfigMaps make configuration more manageable at scale.
-
-== Try A/B testing
-
-Deploy a new PHP app, but this time using the `feature_border` branch from GitHub (you’ll need to switch to “advanced” in the deployment view.
-
-Do not deploy a new route. 
-
-Adjust the existing route to point to the new service on a 60%/40% split. 
-
-Refresh lots of times in your browser :)
-
-= Where can I go from here?
-
-Check out more OpenShift demos, or play around with the deployment of this app a bit more and familiarize yourself with OpenShift ;)
-
-* https://github.com/city-breaks-on-openshift
