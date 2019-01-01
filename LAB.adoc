@@ -79,4 +79,4 @@ Remove the environment variables from the deployment config, and add them into a
 
 Check out more OpenShift demos, or play around with the deployment of this app a bit more and familiarize yourself with OpenShift ;)
 
-* link:https://github.com/city-breaks-on-openshift[City Breaks on OpenShift]
+* link:https://github.com/city-holidays-on-openshift-azure[City Holidays on OpenShift]
